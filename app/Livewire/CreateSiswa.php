@@ -32,7 +32,7 @@ class CreateSiswa extends Component
             'id_kelas' => 'required',
             'foto' => 'required '
         ]);
-
+ 
         $foto = $this->foto->store('photos');
 
         $creatdSiswa = new Siswa;
