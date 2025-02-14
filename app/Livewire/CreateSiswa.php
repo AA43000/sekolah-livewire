@@ -34,7 +34,7 @@ class CreateSiswa extends Component
         ]);
 
         $foto = $this->foto->store('photos');
-
+ 
         $creatdSiswa = new Siswa;
         $creatdSiswa->name = $this->name;
         $creatdSiswa->jenis_kelamin = $this->jenis_kelamin;
