@@ -42,6 +42,13 @@
                         <span class="text-center">{{$message}}</span>
                     @enderror
                 </div>
+                <div class="form-group">
+                    <label for="kelas">Foto</label>
+                    <input type="file" wire:model="foto" id="foto" class="form-control">
+                    @error('foto')
+                        <span class="text-center">{{$message}}</span>
+                    @enderror
+                </div>
                 <a href="/siswa" wire:navigate class="btn btn-secondary">Batal</a>
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </form>

@@ -10,7 +10,8 @@ class Siswa extends Model
         'name',
         'nis',
         'jenis_kelamin',
-        'id_kelas'
+        'id_kelas',
+        'foto'
     ];
 
     public function kelas()

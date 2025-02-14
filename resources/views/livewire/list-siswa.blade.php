@@ -14,6 +14,7 @@
                             <th scope="col">Jenis Kelamin</th>
                             <th scope="col">NIS</th>
                             <th scope="col">kelas</th>
+                            <th scope="col">Foto</th>
                             <th scope="col">Aksi</th>
                         </tr>
                     </thead>
@@ -25,6 +26,7 @@
                             <td>{{$data->jenis_kelamin}}</td>
                             <td>{{$data->nis}}</td>
                             <td>{{$data->kelas->name}}</td>
+                            <td><img src="{{Storage::url($data->foto)}}" alt=""></td>
                             <td>
                                 <a href="/siswa/edit/{{$data->id}}" wire:navigate class="btn btn-primary btn-sm">Edit</a>
                                 <button wire:click="deleteSiswa({{$data->id}})" wire:confirm="Anda yakin ingin mnghapus??" class="btn btn-danger btn-sm">Hapus</button>

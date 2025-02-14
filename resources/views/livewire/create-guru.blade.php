@@ -56,8 +56,8 @@
 </div>
 
 <script>
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     $('#id_kelas').select2();
+    document.addEventListener('DOMContentLoaded', function () {
+        $('#id_kelas').select2();
 
     //     const form = document.getElementById('formData');
 
@@ -68,10 +68,10 @@
     //         // Jika ingin meneruskan ke Livewire, biarkan form tetap terkirim
     //         // Livewire akan menangani submit secara normal setelah JS ini
     //     });
-    //     // $('#id_kelas').on('change', function (e) {
-    //     //     @this.set('id_kelas', $(this).val());
-    //     // });
-    // });
+        $('#id_kelas').on('change', function (e) {
+            @this.set('id_kelas', $(this).val());
+        });
+    });
 
     // document.addEventListener('livewire:load', function () {
     //     $('#id_kelas').select2();
